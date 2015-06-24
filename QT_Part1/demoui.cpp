@@ -31,6 +31,8 @@ DemoUI::DemoUI(QApplication &app)
     m_main_layout->addItem(m_age_layout);
     m_main_layout->addWidget(m_exit_btn);
 
+    m_main_window->setLayout(m_main_layout);
+
     QObject::connect(m_exit_btn, SIGNAL(released()), &app, SLOT(quit()));
 }
 
