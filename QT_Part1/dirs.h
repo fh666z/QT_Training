@@ -1,7 +1,7 @@
 #ifndef DIRS_H
 #define DIRS_H
 
-#include <QMainWindow>
+#include <QWidget>
 #include <QDialog>
 #include <QListWidget>
 #include <QPushButton>
@@ -12,7 +12,7 @@ class Dirs : public QDialog
 {
     Q_OBJECT
 public:
-    Dirs(QMainWindow *win);
+    Dirs(QWidget *win);
     ~Dirs();
 
     void populateList();
