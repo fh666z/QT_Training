@@ -2,8 +2,7 @@ QT      += widgets
 SOURCES += \
     main.cpp \
     demoui.cpp \
-    finddialog.cpp \
-    dirs.cpp
+    finddialog.cpp
 
 HEADERS += \
     demoui.h \

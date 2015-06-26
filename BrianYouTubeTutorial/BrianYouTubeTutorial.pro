@@ -8,4 +8,8 @@ QT       += core widgets
 
 TARGET = BrianYouTubeTutorial
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    dirs.cpp
+
+HEADERS += \
+    dirs.h
