@@ -1,4 +1,4 @@
-#include "Dirs.h"
+#include "dirs.h"
 #include <QDir>
 #include <QListWidget>
 #include <QFileInfo>
