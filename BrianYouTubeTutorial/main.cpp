@@ -11,7 +11,10 @@ int main(int argc, char *argv[])
     QWidget *win = new QWidget;
 
     Dirs dirs_list(win);
-    dirs_list.populateList();
+
+//    dirs_list.populateDrivesList();
+
+    dirs_list.showCurrentFolderContents("/home/fh666z/Downloads");
 
     win->show();
 

@@ -6,6 +6,7 @@
 #include <QListWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QLabel>
 
 
 class Dirs : public QDialog
@@ -15,9 +16,11 @@ public:
     Dirs(QWidget *win);
     ~Dirs();
 
-    void populateList();
+    void showDrivesList();
+    void showCurrentFolderContents(const QString &path);
 
 private:
+    QLabel      *m_label;
     QListWidget *m_dirsList;
     QPushButton *m_closeBtn;
     QVBoxLayout *m_mainLayout;
