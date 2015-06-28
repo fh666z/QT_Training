@@ -56,9 +56,10 @@ void Dirs::showCurrentFolderContents(const QString &path)
 
         m_label->setText("Folder: " + file_explorer.path());
 
-        foreach(QFileInfo entry, file_explorer.entryInfoList())
+        foreach(QString entry, file_explorer.entryList())
         {
-            new QListWidgetItem(entry.absoluteFilePath(), m_dirsList);
+            new QListWidgetItem(entry, m_dirsList);
+
     #ifdef CONSOLE_DEBUG
             qDebug() << entry.absoluteFilePath()<<endl;
     #endif

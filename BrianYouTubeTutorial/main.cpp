@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 //    dirs_list.populateDrivesList();
 
-    dirs_list.showCurrentFolderContents("/home/fh666z/Downloads");
+    dirs_list.showCurrentFolderContents("/home/fh666z/Downloads/Qt");
 
     win->show();
 
